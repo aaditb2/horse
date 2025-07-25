@@ -47,7 +47,6 @@
   []
 []
 
-
 [Contact]
   [pillars]
     primary = pillar1_right

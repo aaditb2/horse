@@ -563,7 +563,33 @@
  /home/aaditb2/projects/moose/framework/build/header_symlinks/CapabilityUtils.h \
  /home/aaditb2/projects/moose/framework/build/header_symlinks/AppFactory.h \
  /home/aaditb2/projects/moose/modules/module_loader/build/header_symlinks/ModulesApp.h \
+ /home/aaditb2/projects/moose/modules/chemical_reactions/build/header_symlinks/ChemicalReactionsApp.h \
+ /home/aaditb2/projects/moose/modules/contact/build/header_symlinks/ContactApp.h \
+ /home/aaditb2/projects/moose/modules/electromagnetics/build/header_symlinks/ElectromagneticsApp.h \
+ /home/aaditb2/projects/moose/modules/fluid_properties/build/header_symlinks/FluidPropertiesApp.h \
+ /home/aaditb2/projects/moose/modules/fsi/build/header_symlinks/FsiApp.h \
+ /home/aaditb2/projects/moose/modules/functional_expansion_tools/build/header_symlinks/FunctionalExpansionToolsApp.h \
+ /home/aaditb2/projects/moose/modules/geochemistry/build/header_symlinks/GeochemistryApp.h \
+ /home/aaditb2/projects/moose/modules/heat_transfer/build/header_symlinks/HeatTransferApp.h \
+ /home/aaditb2/projects/moose/modules/level_set/build/header_symlinks/LevelSetApp.h \
+ /home/aaditb2/projects/moose/modules/misc/build/header_symlinks/MiscApp.h \
+ /home/aaditb2/projects/moose/modules/navier_stokes/build/header_symlinks/NavierStokesApp.h \
+ /home/aaditb2/projects/moose/modules/optimization/build/header_symlinks/OptimizationApp.h \
+ /home/aaditb2/projects/moose/modules/peridynamics/build/header_symlinks/PeridynamicsApp.h \
+ /home/aaditb2/projects/moose/modules/phase_field/build/header_symlinks/PhaseFieldApp.h \
+ /home/aaditb2/projects/moose/modules/porous_flow/build/header_symlinks/PorousFlowApp.h \
+ /home/aaditb2/projects/moose/modules/ray_tracing/build/header_symlinks/RayTracingApp.h \
+ /home/aaditb2/projects/moose/modules/rdg/build/header_symlinks/RdgApp.h \
+ /home/aaditb2/projects/moose/modules/reactor/build/header_symlinks/ReactorApp.h \
+ /home/aaditb2/projects/moose/modules/richards/build/header_symlinks/RichardsApp.h \
+ /home/aaditb2/projects/moose/modules/scalar_transport/build/header_symlinks/ScalarTransportApp.h \
  /home/aaditb2/projects/moose/modules/solid_mechanics/build/header_symlinks/SolidMechanicsApp.h \
+ /home/aaditb2/projects/moose/modules/solid_properties/build/header_symlinks/SolidPropertiesApp.h \
+ /home/aaditb2/projects/moose/modules/stochastic_tools/build/header_symlinks/StochasticToolsApp.h \
+ /home/aaditb2/projects/moose/modules/subchannel/build/header_symlinks/SubChannelApp.h \
+ /home/aaditb2/projects/moose/modules/thermal_hydraulics/build/header_symlinks/ThermalHydraulicsApp.h \
+ /home/aaditb2/projects/moose/modules/xfem/build/header_symlinks/XFEMApp.h \
+ /home/aaditb2/projects/moose/modules/external_petsc_solver/build/header_symlinks/ExternalPetscSolverApp.h \
  /home/aaditb2/projects/moose/framework/build/header_symlinks/MooseSyntax.h
 /home/aaditb2/projects/horse/src/base/HorseApp.C:
 /home/aaditb2/projects/horse/build/header_symlinks/HorseApp.h:
@@ -1128,5 +1154,31 @@
 /home/aaditb2/projects/moose/framework/build/header_symlinks/CapabilityUtils.h:
 /home/aaditb2/projects/moose/framework/build/header_symlinks/AppFactory.h:
 /home/aaditb2/projects/moose/modules/module_loader/build/header_symlinks/ModulesApp.h:
+/home/aaditb2/projects/moose/modules/chemical_reactions/build/header_symlinks/ChemicalReactionsApp.h:
+/home/aaditb2/projects/moose/modules/contact/build/header_symlinks/ContactApp.h:
+/home/aaditb2/projects/moose/modules/electromagnetics/build/header_symlinks/ElectromagneticsApp.h:
+/home/aaditb2/projects/moose/modules/fluid_properties/build/header_symlinks/FluidPropertiesApp.h:
+/home/aaditb2/projects/moose/modules/fsi/build/header_symlinks/FsiApp.h:
+/home/aaditb2/projects/moose/modules/functional_expansion_tools/build/header_symlinks/FunctionalExpansionToolsApp.h:
+/home/aaditb2/projects/moose/modules/geochemistry/build/header_symlinks/GeochemistryApp.h:
+/home/aaditb2/projects/moose/modules/heat_transfer/build/header_symlinks/HeatTransferApp.h:
+/home/aaditb2/projects/moose/modules/level_set/build/header_symlinks/LevelSetApp.h:
+/home/aaditb2/projects/moose/modules/misc/build/header_symlinks/MiscApp.h:
+/home/aaditb2/projects/moose/modules/navier_stokes/build/header_symlinks/NavierStokesApp.h:
+/home/aaditb2/projects/moose/modules/optimization/build/header_symlinks/OptimizationApp.h:
+/home/aaditb2/projects/moose/modules/peridynamics/build/header_symlinks/PeridynamicsApp.h:
+/home/aaditb2/projects/moose/modules/phase_field/build/header_symlinks/PhaseFieldApp.h:
+/home/aaditb2/projects/moose/modules/porous_flow/build/header_symlinks/PorousFlowApp.h:
+/home/aaditb2/projects/moose/modules/ray_tracing/build/header_symlinks/RayTracingApp.h:
+/home/aaditb2/projects/moose/modules/rdg/build/header_symlinks/RdgApp.h:
+/home/aaditb2/projects/moose/modules/reactor/build/header_symlinks/ReactorApp.h:
+/home/aaditb2/projects/moose/modules/richards/build/header_symlinks/RichardsApp.h:
+/home/aaditb2/projects/moose/modules/scalar_transport/build/header_symlinks/ScalarTransportApp.h:
 /home/aaditb2/projects/moose/modules/solid_mechanics/build/header_symlinks/SolidMechanicsApp.h:
+/home/aaditb2/projects/moose/modules/solid_properties/build/header_symlinks/SolidPropertiesApp.h:
+/home/aaditb2/projects/moose/modules/stochastic_tools/build/header_symlinks/StochasticToolsApp.h:
+/home/aaditb2/projects/moose/modules/subchannel/build/header_symlinks/SubChannelApp.h:
+/home/aaditb2/projects/moose/modules/thermal_hydraulics/build/header_symlinks/ThermalHydraulicsApp.h:
+/home/aaditb2/projects/moose/modules/xfem/build/header_symlinks/XFEMApp.h:
+/home/aaditb2/projects/moose/modules/external_petsc_solver/build/header_symlinks/ExternalPetscSolverApp.h:
 /home/aaditb2/projects/moose/framework/build/header_symlinks/MooseSyntax.h:
