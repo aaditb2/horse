@@ -8,6 +8,10 @@
 [GlobalParams]
     displacements = 'disp_x disp_y disp_z'
     absolute_value_vector_tags = 'ref'
+    origin = '0 0 0'
+    direction = '0 0 1'
+    polar_moment_of_inertia = pmi
+    factor = t
 
 []
 
@@ -98,6 +102,24 @@
             variable = disp_z
             boundary = load
             function = '0.00011* sin(2*3.1415*15*t)* 0.707'   
+    [../]
+    #torque addition
+    [./twist_x]
+            type = Torque
+            boundary = fixed
+            variable = disp_x
+    [../]
+    
+    [./twist_y]
+            type = Torque
+            boundary = fixed
+            variable = disp_y
+    [../]
+
+    [./twist_z]
+            type = Torque
+            boundary = fixed
+            variable = disp_z
     [../]
 
     [./Pressure]
@@ -319,6 +341,12 @@
         variable= max_principal_stress
         value_type=max
     []
+    [pmi]
+    type = PolarMomentOfInertia
+    boundary = fixed
+    # execute_on = 'INITIAL NONLINEAR'
+    execute_on = 'INITIAL'
+  []
 []
 
 
