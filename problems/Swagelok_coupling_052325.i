@@ -9,20 +9,14 @@
     displacements = 'disp_x disp_y disp_z'
 []
 [AuxVariables]
-    [temp]
+    [./temp]
     []
-    [theta]
-    []
-    [period]
-    []
-    [amplitude]
-    []  
 []
 
 
 
 [AuxKernels] 
-    [temperature_function] 
+    [./temperature_function] 
         type= FunctionAux 
         variable= temp
         function = 82.22 # (C) 180 F temperature for lube oil
@@ -30,21 +24,15 @@
         #function = 82.22 # (C) 180 F temperature for lube oil
         
     []
-    [theta_function]
-        type = FunctionAux
-        variable= theta
-        function = (3.1415/4)
-    []
-    [period_function]
-        type = FunctionAux
-        variable = period
-        function = 2*3.1415*15
-    []
-    [amplitude_function]
-        type = FunctionAux
-        variable = amplitude
-        function = 0.00011
-    []
+[]
+
+[Functions]
+    [./bc_func]
+        type = ParsedFunction
+        expression = 'amplitude * sin(period*t) * sin(theta)'
+        symbol_names = 'theta amplitude period'
+        symbol_values = '0.785375 0.00011 94.245'
+    [../]
 []
 
 [Physics/SolidMechanics/QuasiStatic]
@@ -99,14 +87,15 @@
             type = FunctionDirichletBC
             variable = disp_y
             boundary = load
-            function = 'amplitude* sin(period*t)* sin(theta)'   #peak displacement of 0.11 mm and frequency is 10-500Hz
+            function = 'bc_func'   #peak displacement of 0.11 mm and frequency is 10-500Hz
     [../]
     
     [./time_dependent_disp_BC_load_disp_z]
             type = FunctionDirichletBC
             variable = disp_z
             boundary = load
-            function = 'amplitude* sin(period*t)* sin(theta)'   
+            function = 'bc_func'
+   
     [../]
 
     [./Pressure]

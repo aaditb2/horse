@@ -9,7 +9,7 @@
     displacements = 'disp_x disp_y disp_z'
     absolute_value_vector_tags = 'ref'
     origin = '0 0 0'
-    direction = '0 0 1'
+    direction = '1 0 0'
     polar_moment_of_inertia = pmi
     factor = t
 
@@ -107,18 +107,27 @@
     [./twist_x]
             type = Torque
             boundary = fixed
+            #direction = '0 0 1'
+            #origin = '0 0 0'
+            #PolarMomentOfInertia = pmi
             variable = disp_x
     [../]
     
     [./twist_y]
             type = Torque
             boundary = fixed
+            #direction = '0 0 1'
+            #origin = '0 0 0'
+            #PolarMomentOfInertia = pmi
             variable = disp_y
     [../]
 
     [./twist_z]
             type = Torque
             boundary = fixed
+           #direction = '0 0 1'
+            #origin = '0 0 0'
+            #PolarMomentOfInertia = pmi
             variable = disp_z
     [../]
 
